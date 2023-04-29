@@ -1,0 +1,36 @@
+    
+    
+    #aboutContainer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 2vw 25vw;
+    }
+  
+  .about-persona{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5vh 0;
+  }
+  
+  .about-image{
+    padding-right: 5vw;
+  }
+  
+  .about-image img{
+    max-width: 20vh;
+  }
+  
+  .about-text{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-text h1{
+    color: #EF767A;
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 2rem;
+  }

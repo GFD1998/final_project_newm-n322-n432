@@ -1,0 +1,19 @@
+.products-image{
+    padding-right: 5vw;
+  }
+  
+.products-image img{
+    width: 10rem;
+    height: 10rem;
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: 10rem;
+}
+
+
+
+
+.product-image{
+    padding-right: 5vw;
+}
+  

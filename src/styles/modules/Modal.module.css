@@ -1,0 +1,39 @@
+.modalTrigger{
+    cursor: pointer;
+}
+
+
+.modalTrigger:hover{
+    color: red;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal div {
+    background-color: #FFFFFF;
+    width: 75%;
+    padding: 24px;
+}
+
+.modal button {
+    color: #FFFFFF;
+}
+
+.modal button{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 16px;
+}
+
