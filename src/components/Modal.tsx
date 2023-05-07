@@ -2,7 +2,7 @@ import React from 'react';
 import ModalStyles from '../styles/modules/Modal.module.css';
 
 
-export default function List({ trigger, children }:any){
+export default function Modal({ trigger, children }:any){
 
     const [isOpen, setIsOpen] = React.useState(false);
 

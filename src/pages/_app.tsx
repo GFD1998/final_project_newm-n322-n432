@@ -9,6 +9,7 @@ import '/src/styles/nav.css';
 import '/src/styles/pageStyles/home.css';
 import '/src/styles/pageStyles/about.css';
 import '/src/styles/pageStyles/products.css';
+import '/src/styles/modules/App.module.css';
 
 /* Footer Imports */
 import '/src/styles/footer.css';
@@ -16,6 +17,8 @@ import '/src/styles/footer.css';
 import React from 'react';
 import Link from 'next/link';
 import useFirebase from '@/useHooks/useFirebase';
+import Modal from '../components/Modal';
+import TopNavBar from '../components/TopNavBar';
 
 console.log('Generating nav bar here.');
 export default function App({ Component, pageProps }:any) {
@@ -23,47 +26,22 @@ export default function App({ Component, pageProps }:any) {
   console.log(firebaseVar.currentUser);
   return (
     <>
-      {/* <nav>
-        <ul>
-          <li>
-            <Link href='/'>Home</Link>
-          </li>
-          <li>
-            <Link href='/about'>About</Link>
-          </li>
-          <li>
-            <Link href='/products'>Products</Link>
-          </li>
-        </ul>
-        <span>The Soap Factory</span>
-      </nav>
-      <header>
-          <img src='/images/hero.jpg' />
-      </header> */}
-      <nav>
-        <ul>
-          <li>
-            <Link href='/'>Home</Link>
-          </li>
-          <li>
-            <button onClick={firebaseVar.loginUser}>Login</button>
-          </li>
-          <li>
-            <button onClick={firebaseVar.logoutUser}>Logout</button>
-          </li>
-        </ul>
-      </nav>
-      <Component {...pageProps} />
-      {/* <footer>
-        <Modal trigger='&copy; The Soap Factory'>
-          Copyright of The Soap Factory<br />
-          Trademark of The Soap Factory
+      <TopNavBar hook={firebaseVar}></TopNavBar>
+
+      <div id="mainContainer">
+        <Component {...pageProps} />
+      </div>
+
+      <footer>
+        <Modal trigger='&copy; GameListings Company'>
+          Copyright of GameListings<br />
+          Trademark of GameListings Company
 
         </Modal>
         <Modal trigger='Terms and Conditions'>
           List of terms and conditions.
         </Modal>
-      </footer> */}
+      </footer>
     </>
   )
   // return <Component {...pageProps} />

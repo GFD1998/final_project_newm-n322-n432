@@ -8,3 +8,11 @@
   #home-container p{
     padding: 5rem;
   }
+
+  #mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
