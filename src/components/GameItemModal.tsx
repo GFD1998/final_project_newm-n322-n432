@@ -68,7 +68,7 @@ export default function GameItemModal(){
                     <div className={GameItemStyles.gameItemContainer}>
                         <div className={GameItemStyles.gameItemModal}>
                             <input type='text' id='newTitle' placeholder='Add Title Here' />
-                            <label for='image'>Add Image Here</label>
+                            <label htmlFor='image'>Add Image Here</label>
                             <input type='file' id='newImage' name='image' placeholder='Add Image Here' />
                             <input type='text' id='newDescription' placeholder='Add Description Here' />
                             <a onClick={submitNewGame}>Submit Game</a>
