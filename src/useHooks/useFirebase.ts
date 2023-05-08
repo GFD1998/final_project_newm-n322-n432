@@ -11,11 +11,11 @@ import 'firebase/compat/firestore';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: process.env.NEXT_PUBLIC_apiKey,
-    authDomain: process.env.NEXT_PUBLIC_authDomain,
-    projectId: process.env.NEXT_PUBLIC_projectId,
-    appId: process.env.NEXT_PUBLIC_appId,
-    storageBucket: "final-project-newm-n322-n423.appspot.com"
+    apiKey: 'AIzaSyDdhqlTcfj52atz9yIOx8TGC5wwbp4wdck',
+    authDomain: 'final-project-newm-n322-n423.firebaseapp.com',
+    projectId: 'final-project-newm-n322-n423',
+    appId: '1:773885748066:web:6421f1804aa3c59cafc23b',
+    storageBucket: 'final-project-newm-n322-n423.appspot.com'
   };
 
 const app = firebase.initializeApp(firebaseConfig);
