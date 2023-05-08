@@ -9,6 +9,16 @@ https://final-project-newm-n322-n432.vercel.app/
 
 
 
+# Comments
+
+# When submitting a new game, make sure to fill all of the fields before clicking 'Submit Game'.
+
+# After editing, deleting, and submitting games, click on 'Resync Games List' near the top of the page to update the page.
+
+
+
+
+
 
 
 
