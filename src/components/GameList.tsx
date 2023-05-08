@@ -11,13 +11,14 @@ export default function GameList({ list }:any){
     const gameList = list.map(function(game:any){
         console.log(game);
         return (
-            <li>
+            <li key={game.id}>
                 <GameItem image={game.image} title={game.title} text={game.description} id={game.id}></GameItem>
             </li>
         );
     });
     return (
         <>
+
             {/* <div id={ListStyles.aboutContainer}> */}
                 <ul className={GameListStyles.gameListContainer}>
                     {gameList}
