@@ -25,18 +25,24 @@ export default function GameItemModal(){
 
     async function submitNewGame(e:any){
         // console.log(document.getElementById('newTitle').value);
-        var title:string = document.getElementById('newTitle')?.value; 
-        var image:string = document.getElementById('newImage')?.value;
-        var imageObj:File = document.getElementById('newImage')?.value;
-        var desc:string = document.getElementById('newDescription')?.value;
-        console.log(title);
-        console.log(image);
-        console.log(imageObj);
-        console.log(desc);
+        var titleElement:any = document.querySelectorAll('#newTitle'); 
+        var imageElement:any = document.querySelectorAll('#newImage');
+        var imageObjElement:any = document.querySelectorAll('#newImage');
+        var descElement:any = document.querySelectorAll('#newDescription');
+        
+        console.log(titleElement[0].value);
+        console.log(imageElement[0].value);
+        console.log(imageObjElement[0].value);
+        console.log(descElement[0].value);
+
+        var title:any = titleElement[0].value;
+        var image:any = imageElement[0].value;
+        var imageObj:any = imageObjElement[0].value;
+        var desc:any = descElement[0].value;
         image = image.split('\\')[2];
         await firebaseVar.submitGame(title, image, desc, imageObj);
         // closeGameModal();
-    }
+    } 
 
     function openGameModal(){
         setNewGameIsOpen(true);
